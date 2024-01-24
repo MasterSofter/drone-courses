@@ -10,7 +10,8 @@
   "author": "Pavel Korolev",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.2"
+    "bootstrap": "^5.3.2",
+    "gsap": "^3.12.5"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
