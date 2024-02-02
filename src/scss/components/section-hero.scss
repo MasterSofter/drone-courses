@@ -1,0 +1,150 @@
+$width-section: 90vw;
+$height-section : $width-section * 0.58;
+
+$width-hero-layer-1: $width-section * 1;
+
+$width-glare-layer-2: $width-hero-layer-1 * 0.65;
+$top-glare-layer-2: $width-hero-layer-1 * 0.006;
+
+$width-borders-layer-3: $width-hero-layer-1 * 0.52;
+$top-borders-layer-3: $width-hero-layer-1 * 0.06;
+$left-borders-layer-3: -$width-hero-layer-1 * 0.35;
+
+$width-outer-pink-layer-3: $width-hero-layer-1 * 0.08;
+$top-outer-pink-layer-3: $width-hero-layer-1 * 0.134;
+$left-outer-pink-layer-3: -$width-hero-layer-1 * 0.77;
+
+$width-inner-pink-layer-3: $width-hero-layer-1 * 0.035;
+$top-inner-pink-layer-3: $width-hero-layer-1 * 0.198;
+$left-inner-pink-layer-3: -$width-hero-layer-1 * 0.79;
+
+$width-inner-grey-text-layer-3: $width-hero-layer-1 * 0.009;
+$top-inner-grey-text-layer-3: $width-hero-layer-1 * 0.198;
+$left-inner-grey-text-layer-3: $width-hero-layer-1 * 0.7;
+
+$width-drone-layer-4: $width-hero-layer-1 * 0.34;
+$top-drone-layer-4: $width-hero-layer-1 * 0.22;
+$left-drone-layer-4: -$width-hero-layer-1 * 0.4;
+
+$width-hero-text-layer-4: $width-hero-layer-1 * 0.235;
+$top-hero-text-layer-4: $width-hero-layer-1 * 0.22;
+$left-hero-text-layer-4: $width-hero-layer-1 * 0.3;
+
+$width-hero-text-title-layer-4: $width-hero-layer-1 * 0.12;
+$top-hero-text-title-layer-4: $width-hero-layer-1 * 0.165;
+$left-hero-text-title-layer-4: $width-hero-layer-1 * 0.195;
+
+.section-hero{
+  position: relative;
+  width: $width-section;
+  height: $height-section;
+  margin: 0 auto;
+}
+
+.hero-layer-1{
+  width: $width-hero-layer-1;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.glare-layer-2{
+  width: $width-glare-layer-2;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: $top-glare-layer-2;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+.borders-layer-3{
+  width: $width-borders-layer-3;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: $top-borders-layer-3;
+  left: $left-borders-layer-3;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+}
+
+.outer-pink-layer-3{
+  width: $width-outer-pink-layer-3;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: $top-outer-pink-layer-3;
+  left: $left-outer-pink-layer-3;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+}
+
+.inner-pink-layer-3{
+  width: $width-inner-pink-layer-3;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: $top-inner-pink-layer-3;
+  left: $left-inner-pink-layer-3;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+}
+
+.inner-grey-text-layer-3{
+  width: $width-inner-grey-text-layer-3;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: $top-inner-grey-text-layer-3;
+  left: $left-inner-grey-text-layer-3;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+}
+
+.drone-layer-4{
+  width: $width-drone-layer-4;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: $top-drone-layer-4;
+  left: $left-drone-layer-4;
+  right: 0;
+  text-align: center;
+  z-index: 4;
+}
+
+.hero-text-layer-4{
+  width: $width-hero-text-layer-4;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: $top-hero-text-layer-4;
+  left: $left-hero-text-layer-4;
+  right: 0;
+  text-align: center;
+  z-index: 4;
+}
+
+.hero-text-title-layer-4{
+  width: $width-hero-text-title-layer-4;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: $top-hero-text-title-layer-4;
+  left: $left-hero-text-title-layer-4;
+  right: 0;
+  text-align: center;
+  z-index: 4;
+}

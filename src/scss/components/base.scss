@@ -1,5 +1,125 @@
+@font-face {
+  font-family: als-sirius;
+  src: url("assets/fonts/ALS_Sirius_VF_1.3.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  font-family: als-sirius;
+  background-color: $body-bg-dark;
+  color: $light;
+}
+
+.background-gradient {
+  background-image: linear-gradient(0deg, #00F78B 0%, #6B71FF 100%);
+  background-origin: border-box;
+  box-shadow: inset 0 1000vw var(--si-body-bg);
+}
+
+.background-solid{
+  background-image: linear-gradient(0deg, #00F78B 0%, #00F78B 100%);
+  background-origin: border-box;
+  box-shadow: inset 0 1000vw var(--si-body-bg);
+}
+
+.mirror{
+  transform: scaleX(-1);
+}
+
+.fs-2 {
+  @include media-breakpoint-up(sm){
+    font-size: 2rem !important;
+  }
+}
+
+.display-4{
+  @include media-breakpoint-up(sm){
+    font-size: 3.5rem !important;
+  }
+}
+
+.display-6{
+  @include media-breakpoint-up(sm){
+    font-size: 2.2rem !important;
+  }
+}
+
+.border-3{
+  border-width: 0.12rem !important;
+}
+
+.border-ne-3{
+  margin-right: -0.12rem;
+}
+
+.border-ne-3-double{
+  margin-right: -0.24rem;
+}
+
+.border-ns-3-double{
+  margin-left: -0.24rem;
+}
+
+.border-ns-3{
+  margin-left: -0.12rem;
+}
+
+.border-nt-3{
+  margin-top: -0.12rem;
+}
+
+.border-ns-2{
+  margin-left: -2px;
+}
+
+.border-nt-2{
+  margin-top: -2px;
+}
+
+.border-4{
+  border-width: 0.225rem !important;
+}
+
+.border-nt-4{
+  margin-top: -0.225rem;
+}
+
+.swiper-pagination-bullet{
+  background-color: #7c7c7c !important;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #00F78B !important;
+}
+
+ul{
+  padding: 0;
+  vertical-align: top;
+}
+
+.li-desktop{
+  list-style: none;
+  padding-left: 3rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  background-image: url("assets/images/arrow-right-long.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1.5rem;
+}
+
+.li-mobile{
+  list-style: none;
+  padding-left: 1.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  background-image: url("assets/images/arrow-right-long.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1rem;
 }

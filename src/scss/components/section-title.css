@@ -1,0 +1,56 @@
+.section-title {
+  position: relative;
+  width: 90vw;
+  margin: 7.2vw auto 9vw;
+}
+
+.section-title-h1 {
+  width: 46.8vw;
+  font-size: 2.34vw;
+  font-weight: 200;
+  text-align: left;
+  line-height: 3.276vw;
+}
+
+.cards-title-container .card {
+  background-color: transparent;
+  text-align: left;
+  margin: 0 auto;
+  border-radius: 1.404vw;
+  border-width: 0.234vw;
+  border-color: #00F78B;
+  min-height: 11.25vw;
+}
+
+.cell-title {
+  vertical-align: top;
+}
+
+.cell-text {
+  vertical-align: bottom;
+}
+
+.cell-title p {
+  text-align: left;
+  margin: 0;
+  font-size: 1.35vw;
+  font-weight: 600;
+  line-height: 2.025vw;
+  padding-top: 1.8vw;
+  padding-left: 0.18vw;
+  padding-right: 0.18vw;
+}
+
+.cell-text p {
+  text-align: left;
+  margin: 0;
+  font-size: 1.35vw;
+  font-weight: 300;
+  line-height: 2.025vw;
+  padding-top: 3.6vw;
+  padding-bottom: 1.35vw;
+  padding-left: 0.18vw;
+  padding-right: 0.18vw;
+}
+
+/*# sourceMappingURL=section-title.css.map */

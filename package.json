@@ -2,6 +2,7 @@
   "name": "drone-courses",
   "version": "1.0.0",
   "description": "lending site",
+  "homepage": "https://dev.mai.ru/services/test-project/drone-cources",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -11,7 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.2",
-    "gsap": "^3.12.5"
+    "bootstrap-icons": "^1.11.3",
+    "gsap": "^3.12.5",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",

@@ -1,0 +1,17 @@
+$width-section: 90vw;
+
+.end-star-desktop{
+  right: 19rem;
+}
+
+.bottom-star-desktop{
+  bottom: 18rem;
+}
+
+.end-star-mobile{
+  right: $width-section * 0.5;
+}
+
+.bottom-star-mobile{
+  bottom: $width-section * 0.4;
+}
