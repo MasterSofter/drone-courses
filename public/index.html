@@ -1,206 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Title</title>
-		<link rel="stylesheet" href="https://dev.mai.ru/generic/vendor/fontawesome/fontawesome-pro-6.1.1-web/css/all.min.css">
-		<link rel="stylesheet" href="dist/bundle.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title</title>
+
+	<link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+	<link rel="stylesheet" href="dist/bundle.css">
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="assets/vendor/gsap3/gsap.min.js"></script>
+	<script src="assets/vendor/jquery.min.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/vendor/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+	<script src="assets/vendor/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+
 </head>
-<body class="wrapper-content overflow-x-hidden">
-<div class="d-none d-sm-block content-desktop">
+<body class="wrapper-content bg-dark overflow-x-hidden">
+<div id="content-desktop" class="d-none d-sm-block bg-dark w-100">
+
+  <section id="section-intro-white-chat-root-desktop" class="rounded-5 will-change mix-blend position-fixed d-grid place-items-center perspective w-100 h-100 z-1">
+	  <span id="section-intro-white-chat-title-desktop" class="text-dark display-4 fw-bold z-2">Мы знаем как передать</span>
+	</section>
 
 	<!-- ** Секция TopBar -DESKTOP- ** -->
-	<section class="d-flex flex-row justify-content-between section-top-bar w-50 background-gradient position-relative mx-auto mb-6 mt-4">
-		<div class="section-top-bar-body d-flex flex-row justify-content-between w-100">
-			<img class="section-top-bar-img" src="assets/images/logo-top-bar-layer-1.svg">
-			<div class="d-flex flex-column justify-content-center">
-				<span class="fs-6">Получить консультацию</span>
+	<section id="section-top-bar-desktop" class="position-relative overflow-hidden py-4 pt-xxl-4 pb-xxl-2 w-100 bg-dark z-2">
+		<div class="d-flex flex-row justify-content-between section-top-bar w-50 background-gradient position-relative mx-auto">
+			<div class="section-top-bar-body d-flex flex-row justify-content-between w-100">
+				<img class="section-top-bar-img" src="assets/images/logo-top-bar-layer-1.svg">
+				<div class="d-flex flex-column justify-content-center">
+					<span class="fs-6">Получить консультацию</span>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- ** Секция Hero -DESKTOP- ** -->
-	<section class="section-hero text-center mb-5 mb-sm-6">
-		<img src="assets/images/section-hero/hero-layer-1.svg" class="position-absolute hero-layer-1">
-		<img src="assets/images/section-hero/glare-layer-2.svg" class="position-absolute glare-layer-2">
-		<img src="assets/images/section-hero/borders-layer-3.svg" class="position-absolute borders-layer-3">
-		<img src="assets/images/section-hero/outer-pink-layer-3.svg" class="position-absolute outer-pink-layer-3">
-		<img src="assets/images/section-hero/inner-pink-layer-3.svg" class="position-absolute inner-pink-layer-3">
-		<img src="assets/images/section-hero/inner-grey-text-layer-3.svg" class="position-absolute inner-grey-text-layer-3">
-		<img src="assets/images/section-hero/drone-layer-4.svg" class="position-absolute drone-layer-4">
-		<img src="assets/images/section-hero/hero-text-layer-4.svg" class="position-absolute hero-text-layer-4">
-		<img src="assets/images/section-hero/hero-text-title-layer-4.svg" class="position-absolute hero-text-title-layer-4">
+	<section id="section-hero-desktop" class="position-relative overflow-hidden pt-4 pt-xxl-2 pb-6 pb-xxl-5 w-100 bg-dark z-2">
+		<div class="section-hero text-center">
+			<div id="section-hero-desktop-layer-1">
+				<img src="assets/images/section-hero/hero-layer-1.png" class="position-absolute hero-layer-1">
+				<img src="assets/images/section-hero/glare-layer-2.svg" class="position-absolute glare-layer-2">
+			</div>
+			<div id="section-hero-desktop-layer-2">
+				<img src="assets/images/section-hero/borders-layer-3.svg" class="position-absolute borders-layer-3">
+				<img src="assets/images/section-hero/outer-pink-layer-3.svg" class="position-absolute outer-pink-layer-3">
+				<img src="assets/images/section-hero/inner-pink-layer-3.svg" class="position-absolute inner-pink-layer-3">
+				<img src="assets/images/section-hero/inner-grey-text-layer-3.svg" class="position-absolute inner-grey-text-layer-3">
+			</div>
+			<div id="section-hero-desktop-layer-3">
+				<img src="assets/images/section-hero/drone-layer-4.svg" class="position-absolute drone-layer-4">
+				<img src="assets/images/section-hero/hero-text-layer-4.svg" class="position-absolute hero-text-layer-4">
+				<img src="assets/images/section-hero/hero-text-title-layer-4.svg" class="position-absolute hero-text-title-layer-4">
+			</div>
+		</div>
 	</section>
 
 	<!-- ** Секция Title -DESKTOP- ** -->
-	<section class="w-90 mx-auto mb-6">
-		<div class="d-flex flex-row justify-content-center mb-4">
-			<p class="w-50 fw-light lh-base text-start">
-				Официальный онлайн-курс от Московского
-				авиационного института, утверждённый
-				учёным советом университета.
-			</p>
-		</div>
-		<div class="d-flex flex-row justify-content-center">
-			<div class="col-6 d-flex flex-row justify-content-center">
-				<div class="col-6 d-flex flex-column justify-content-between border border-green border-3 border-ne-3 rounded-4 p-3">
-					<span class="fw-bold fs-6 mb-4">ОБРАТНАЯ СВЯЗЬ</span>
-					<span class="fw-light fs-6 mt-2">
+	<section id="section-title-desktop" class="position-relative overflow-hidden w-100 bg-dark pb-6 z-2">
+		<div class="w-90 mx-auto">
+			<div data-aos="fade-up" data-aos-delay="80" class="d-flex flex-row justify-content-center mb-4">
+				<p class="w-50 fw-light lh-base text-start">
+					Официальный онлайн-курс от Московского
+					авиационного института, утверждённый
+					учёным советом университета.
+				</p>
+			</div>
+			<div class="d-flex flex-row justify-content-center">
+				<div class="col-6 d-flex flex-row justify-content-center">
+					<div data-aos="fade-up" data-aos-delay="80" class="col-6 d-flex flex-column justify-content-between border border-green border-3 border-ne-3 rounded-4 p-3">
+						<span class="fw-bold fs-6 mb-4">ОБРАТНАЯ СВЯЗЬ</span>
+						<span class="fw-light fs-6 mt-2">
 					Обучение в формате
 					онлайн с обратной связью
 					от преподавателя.
 				</span>
-				</div>
-				<div class="col-6 d-flex flex-column justify-content-between border border-green border-3 border-ne-3-double rounded-4 p-3">
-					<span class="fw-bold fs-6 mb-4">ВСЕ ТИПЫ БЛА</span>
-					<span class="fw-light fs-6 mt-2">
+					</div>
+					<div data-aos="fade-up" data-aos-delay="250" class="col-6 d-flex flex-column justify-content-between border border-green border-3 border-ne-3-double rounded-4 p-3">
+						<span class="fw-bold fs-6 mb-4">ВСЕ ТИПЫ БЛА</span>
+						<span class="fw-light fs-6 mt-2">
 					Конструкции всех типов:
 					самолётные, вертолётные
 					и мультироторные.
 				</span>
+					</div>
 				</div>
-			</div>
-			<div class="col-6 d-flex flex-row justify-content-center">
-				<div class="col-6 d-flex flex-column justify-content-between border border-green border-3 border-ns-3-double rounded-4 p-3">
-					<span class="fw-bold fs-6 mb-4">УДОСТОВЕРЕНИЕ</span>
-					<span class="fw-light fs-6 mt-2">
+				<div class="col-6 d-flex flex-row justify-content-center">
+					<div data-aos="fade-up" data-aos-delay="450" class="col-6 d-flex flex-column justify-content-between border border-green border-3 border-ns-3-double rounded-4 p-3">
+						<span class="fw-bold fs-6 mb-4">УДОСТОВЕРЕНИЕ</span>
+						<span class="fw-light fs-6 mt-2">
 					Удостоверение ведущего
 					аэрокосмического вуза
 					в мире государственного образца.
 				</span>
-				</div>
-				<div class="col-6 d-flex flex-column justify-content-between border border-green border-3 border-ns-3 rounded-4 p-3">
-					<span class="fw-bold fs-6 mb-4">ПРЕПОДАВАТЕЛИ</span>
-					<span class="fw-light fs-6 mt-2">
+					</div>
+					<div data-aos="fade-up" data-aos-delay="650" class="col-6 d-flex flex-column justify-content-between border border-green border-3 border-ns-3 rounded-4 p-3">
+						<span class="fw-bold fs-6 mb-4">ПРЕПОДАВАТЕЛИ</span>
+						<span class="fw-light fs-6 mt-2">
 					Преподаватели МАИ, лауреаты конференций и международных турниров Drone Racing.
 				</span>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- ** Секция About -DESKTOP- ** -->
-	<section class="w-90 mx-auto position-relative mb-5">
-		<img src="assets/images/logo-mai-layer-1.svg" class="position-relative w-logo-mai-desktop start-0 top-0 z-1">
-		<img src="assets/images/joystick-layer-1.svg" class="position-absolute w-joystick-desktop end-0 bottom-0 z-1">
-		<img src="assets/images/star-layer-1.svg" class="position-absolute w-star-desktop end-star-desktop bottom-star-desktop z-1">
-		<p class="position-relative fs-5 fw-light w-45 lh-sm pt-4 z-2">
-			Пройти обучение в комфортном
-			режиме и получить качественные
-			знания и практические навыки
-		</p>
-		<div class="display-4">
-			<p class="position-relative lh-1 fw-light my-0 z-2">в самом</p>
-			<p class="position-relative lh-1 fw-light my-0 ps-4 z-2">отлетевшем</p>
-			<p class="position-relative lh-1-sm fw-light my-0 ps-6 z-2">универститете</p>
-			<p class="position-relative lh-1 fw-light my-0 z-2">России</p>
-		</div>
-
-	</section>
-
-	<!-- ** Секция AboutSwiper ** -DESKTOP- -->
-	<section class="w-90 mx-auto position-relative">
-		<div class="position-relative d-flex flex-row justify-content-start mb-5">
-			<div class="position-relative">
-				<img src="assets/images/section-about-carousel/msg-inner-part.svg" class="position-relative w-inner-msg-block mb-space-lg mb-5">
-				<div class="d-inline-block p-2 rounded-4 bg-light-dark ms-n1">
-				<span class="fs-5 text-green fw-light px-3">Чё мы там знаем о дронах?
-				<img src="assets/images/section-about-carousel/emodzy-1.svg" class="position-relative w-msg-emodzy mb-2">
-			</span>
-				</div>
+	<section id="section-about-desktop" class="position-relative overflow-hidden w-100 bg-dark pb-5 z-2">
+		<div class="position-relative w-90 mx-auto">
+			<img data-aos="fade-up" data-aos-delay="150" src="assets/images/section-hero/logo-mai-layer-1.svg" class="position-relative w-logo-mai-desktop start-0 top-0 z-1">
+			<img data-aos="fade-up" data-aos-delay="300" src="assets/images/section-hero/joystick-layer-1.svg" class="position-absolute w-joystick-desktop end-0 bottom-0 z-1">
+			<img data-aos="fade-up" data-aos-delay="250" src="assets/images/section-hero/star-layer-1.svg" class="position-absolute w-star-desktop end-star-desktop bottom-star-desktop z-1">
+			<p data-aos="zoom-in" data-aos-delay="100" class="position-relative fs-5 fw-light w-45 lh-sm pt-4 z-2">
+				Пройти обучение в комфортном
+				режиме и получить качественные
+				знания и практические навыки
+			</p>
+			<div class="display-4">
+				<p data-aos="fade-right" data-aos-delay="100" class="position-relative lh-1 fw-light my-0 z-2">в самом</p>
+				<p data-aos="fade-right" data-aos-delay="400" class="position-relative lh-1 fw-light my-0 ps-4 z-2">отлетевшем</p>
+				<p data-aos="fade-right" data-aos-delay="400" class="position-relative lh-1-sm fw-light my-0 ps-6 z-2">универститете</p>
+				<p data-aos="fade-right" data-aos-delay="400" class="position-relative lh-1 fw-light my-0 z-2">России</p>
 			</div>
 		</div>
+	</section>
 
-		<div class="swiper ms-n2 me-n4 swiper-desktop h-swiper-desktop mb-5">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<div class="col h-100 d-flex flex-column justify-content-between bg-light-dark rounded-4 p-3 me-4">
+	<!-- ** Секция AboutSwiper -DESKTOP- ** -->
+	<section id="section-about-swiper-desktop" class="position-relative overflow-hidden w-100 bg-dark pb-5 z-2">
+		<div class="w-90 mx-auto">
+			<div class="position-relative d-flex flex-row justify-content-start mb-5">
+				<div class="position-relative d-flex flex-row justify-content-center">
+					<div data-aos="zoom-in" data-aos-delay="10" class="d-flex flex-row justify-content-center p-2 rounded-4 bg-light-dark ms-n1">
+						<div class="d-flex flex-column justify-content-center">
+							<span class="reveal-type fs-5 text-green fw-light px-3">Чё мы там знаем о дронах?</span>
+						</div>
+						<img data-aos="zoom-in" data-aos-delay="300" src="assets/images/section-about-carousel/emodzy-1.svg" class="position-relative w-msg-emodzy mb-2">
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper ms-n2 me-n4 swiper-desktop h-swiper-desktop mb-5">
+				<div class="swiper-wrapper">
+					<div data-aos="zoom-in" data-aos-delay="50" class="swiper-slide">
+						<div class="col h-100 d-flex flex-column justify-content-between bg-light-dark rounded-4 p-3 me-4">
 					<span class="mb-2 fs-7 fw-light">
 						МАИ на Drone Expo
 						Show: два насыщенных
 						дня — только о дронах...
 					</span>
-						<div class="d-flex flex-row justify-content-end">
-							<img class="w-arrow-long-desktop" src="assets/images/arrow-right-long.svg">
+							<div class="d-flex flex-row justify-content-end">
+								<img class="w-arrow-long-desktop" src="assets/images/icons/arrow-right-long.svg">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="col h-100 d-flex flex-column justify-content-between bg-light-dark rounded-4 p-3 me-4">
+					<div data-aos="zoom-in" data-aos-delay="200" class="swiper-slide">
+						<div class="col h-100 d-flex flex-column justify-content-between bg-light-dark rounded-4 p-3 me-4">
 					<span class="mb-2 fs-7 fw-light">
 						Победы в гонках дронов
 						и патент на беспилотник:
 						интервью со студентом
 						МАИ
 					</span>
-						<div class="d-flex flex-row justify-content-end">
-							<img class="w-arrow-long-desktop" src="assets/images/arrow-right-long.svg">
+							<div class="d-flex flex-row justify-content-end">
+								<img class="w-arrow-long-desktop" src="assets/images/icons/arrow-right-long.svg">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="col h-100 d-flex flex-column justify-content-between bg-light-dark rounded-4 p-3 me-4">
+					<div data-aos="zoom-in" data-aos-delay="400" class="swiper-slide">
+						<div class="col h-100 d-flex flex-column justify-content-between bg-light-dark rounded-4 p-3 me-4">
 					<span class="mb-2 fs-7 fw-light">
 					Маёвцы завоевали призы
 					в соревнованиях дронов
 					в рамках форума
 					«Архипелаг-2023»
 					</span>
-						<div class="d-flex flex-row justify-content-end">
-							<img class="w-arrow-long-desktop" src="assets/images/arrow-right-long.svg">
+							<div class="d-flex flex-row justify-content-end">
+								<img class="w-arrow-long-desktop" src="assets/images/icons/arrow-right-long.svg">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="col h-100 d-flex flex-column justify-content-between bg-light-dark rounded-4 p-3 me-4">
+					<div data-aos="zoom-in" data-aos-delay="600" class="swiper-slide">
+						<div class="col h-100 d-flex flex-column justify-content-between bg-light-dark rounded-4 p-3 me-4">
 					<span class="mb-2 fs-7 fw-light">
 						Ректор МАИ рассказал
 						о формировании рынка
 						беспилотных авиасистем
 					</span>
-						<div class="d-flex flex-row justify-content-end">
-							<img class="w-arrow-long-desktop" src="assets/images/arrow-right-long.svg">
+							<div class="d-flex flex-row justify-content-end">
+								<img class="w-arrow-long-desktop" src="assets/images/icons/arrow-right-long.svg">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="col h-100 d-flex flex-column justify-content-between bg-light-dark rounded-4 p-3 me-4">
+					<div class="swiper-slide">
+						<div class="col h-100 d-flex flex-column justify-content-between bg-light-dark rounded-4 p-3 me-4">
 					<span class="mb-2 fs-7 fw-light">
 						МАИ на Drone Expo
 						Show: два насыщенных
 						дня — только о дронах...
 					</span>
-						<div class="d-flex flex-row justify-content-end">
-							<img class="w-arrow-long-desktop" src="assets/images/arrow-right-long.svg">
+							<div class="d-flex flex-row justify-content-end">
+								<img class="w-arrow-long-desktop" src="assets/images/icons/arrow-right-long.svg">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="position-relative d-flex flex-row justify-content-between mb-5">
-			<div class="position-relative">
-				<i class="btn-prev bi bi-arrow-left-circle text-light display-4 me-4"></i>
-				<i class="btn-next bi bi-arrow-right-circle text-light display-4"></i>
-			</div>
-			<div class="position-relative">
-				<div class="d-inline-block p-3 rounded-4 bg-light-dark me-n1">
-				<span class="fs-5 text-green fw-light px-3">Ну.. как-то так
-				<img src="assets/images/section-about-carousel/emodzy-2.svg" class="position-relative w-msg-emodzy mb-2 mx-0 px-0">
-			</span>
+			<div class="position-relative d-flex flex-row justify-content-between">
+				<div class="position-relative">
+					<i data-aos="zoom-in" data-aos-delay="100" class="btn-prev bi bi-arrow-left-circle text-light display-4 me-4"></i>
+					<i data-aos="zoom-in" data-aos-delay="200" class="btn-next bi bi-arrow-right-circle text-light display-4"></i>
 				</div>
-				<img src="assets/images/section-about-carousel/msg-inner-part.svg" class="position-relative w-inner-msg-block mb-space-lg mirror mb-5">
+				<div class="position-relative">
+					<div data-aos="zoom-in" data-aos-delay="10" class="d-flex flex-row justify-content-center p-3 rounded-4 bg-light-dark me-n1">
+						<div class="d-flex flex-column justify-content-center">
+							<span class="reveal-type fs-5 text-green fw-light px-3">Ну.. как-то так</span>
+						</div>
+						<img data-aos="zoom-in" data-aos-delay="300" src="assets/images/section-about-carousel/emodzy-2.svg" class="position-relative w-msg-emodzy mb-2 mx-0 px-0">
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- ** Секция AboutTables -DESKTOP- ** -->
-	<section class="w-90 mx-auto mb-5">
-		<h3 class="display-6 fw-medium text-start pb-4">Ближе к делу</h3>
-		<div class="d-flex flex-row justify-content-between">
-			<div class="col me-4 bg-light-dark rounded-4">
-				<div class="pt-4 px-4 pb-5 w-100 h-100 d-flex flex-column justify-content-between">
+	<section id="section-about-tables-desktop" class="position-relative overflow-hidden w-100 bg-dark pb-5 z-2">
+		<div class="w-90 mx-auto">
+			<h3 data-aos="fade-up" data-aos-delay="200" class="display-6 fw-medium text-start pb-4">Ближе к делу</h3>
+			<div class="d-flex flex-row justify-content-between">
+				<div data-aos="fade-up" data-aos-delay="600" class="col me-4 bg-light-dark rounded-4">
+					<div class="pt-4 px-4 pb-5 w-100 h-100 d-flex flex-column justify-content-between">
 				<span class="d-block fw-light pb-4">
 					С 2021 года МАИ входит в первую
 					группу вузов по треку «Территориальное
@@ -208,48 +238,49 @@
 					стратегического академического
 					лидерства «Приоритет-2030».
 				</span>
-					<div class="d-block text-start">
-						<span class="badge rounded-pill border border-1 border-secondary fw-light mb-2">Будущие аэрокосмические рынки – 2050</span>
-						<br>
-						<span class="badge rounded-pill border border-1 border-secondary fw-light">Аэромобильность</span>
+						<div class="d-block text-start">
+							<span class="badge rounded-pill border border-1 border-secondary fw-light mb-2">Будущие аэрокосмические рынки – 2050</span>
+							<br>
+							<span class="badge rounded-pill border border-1 border-secondary fw-light">Аэромобильность</span>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col d-flex flex-column justify-content-between">
-				<div class="d-flex mb-3 justify-content-between">
-					<div class="col me-3 bg-light-dark rounded-4 pt-2 pb-3 px-3 d-flex flex-column justify-content-between">
-					<span class="text-purple fs-2 fw-bolder pb-3">
-						1 мес.
-					</span>
-						<span class="fw-light">
-						длительность<br>программы
-					</span>
+				<div class="col d-flex flex-column justify-content-between">
+					<div class="d-flex mb-3 justify-content-between">
+						<div data-aos="fade-up" data-aos-delay="1000" class="col me-3 bg-light-dark rounded-4 pt-2 pb-3 px-3 d-flex flex-column justify-content-between">
+						<span class="text-purple fs-2 fw-bolder pb-3">
+							1 мес.
+						</span>
+							<span class="fw-light">
+							длительность<br>программы
+						</span>
+						</div>
+						<div data-aos="fade-up" data-aos-delay="1200" class="col bg-light-dark rounded-4 pt-2 pb-3 px-3 d-flex flex-column justify-content-between">
+						<span class="text-purple fs-2 fw-bolder pb-3">
+							36
+						</span>
+							<span class="fw-light">
+							академических<br>часов
+						</span>
+						</div>
 					</div>
-					<div class="col bg-light-dark rounded-4 pt-2 pb-3 px-3 d-flex flex-column justify-content-between">
-					<span class="text-purple fs-2 fw-bolder pb-3">
-						36
-					</span>
-						<span class="fw-light">
-						академических<br>часов
-					</span>
-					</div>
-				</div>
-				<div class="d-flex justify-content-between">
-					<div class="col me-3 bg-light-dark rounded-4 pt-2 pb-3 px-3 d-flex flex-column justify-content-between">
-					<span class="text-purple fs-2 fw-bolder pb-3">
-						2500+
-					</span>
-						<span class="fw-light">
-						обучающихся<br>ежегодно
-					</span>
-					</div>
-					<div class="col bg-light-dark rounded-4 pt-2 pb-3 px-3 d-flex flex-column justify-content-between">
-					<span class="text-purple fs-2 fw-bolder pb-3">
-						11
-					</span>
-						<span class="fw-light">
-						практических<br>занятий
-					</span>
+					<div class="d-flex justify-content-between">
+						<div data-aos="fade-up" data-aos-delay="1000" class="col me-3 bg-light-dark rounded-4 pt-2 pb-3 px-3 d-flex flex-column justify-content-between">
+						<span class="text-purple fs-2 fw-bolder pb-3">
+							2500+
+						</span>
+							<span class="fw-light">
+							обучающихся<br>ежегодно
+						</span>
+						</div>
+						<div data-aos="fade-up" data-aos-delay="1200" class="col bg-light-dark rounded-4 pt-2 pb-3 px-3 d-flex flex-column justify-content-between">
+						<span class="text-purple fs-2 fw-bolder pb-3">
+							11
+						</span>
+							<span class="fw-light">
+							практических<br>занятий
+						</span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -257,10 +288,10 @@
 	</section>
 
 	<!-- ** Секция Program -DESKTOP- ** -->
-	<section class="w-100 mx-auto">
-		<h3 class="display-6 fw-medium ms-5 text-start pb-4">Программа курса</h3>
-		<div class="accordion accordion-flush" id="accordion-desktop">
-			<div class="accordion-item p-4 rounded-5 border border-4 border-secondary bg-transparent">
+	<section id="section-program-desktop" class="position-relative overflow-hidden w-100 mx-auto z-2 transition-smooth z-2 bg-dark">
+		<h3 data-aos="fade-up" data-aos-delay="200" class="display-6 fw-medium ms-5 text-start pb-4">Программа курса</h3>
+		<div class="accordion accordion-flush z-2" id="accordion-desktop">
+			<div data-aos="fade-up" data-aos-delay="200" class="accordion-item p-4 rounded-5 border border-4 border-secondary bg-dark z-2">
 				<div class="accordion-header ps-3" id="accordion-desktop-1">
 					<p class="text-light fs-4 fw-medium">История развития и классификация БЛА</p>
 					<div class="d-flex flex-row justify-content-between">
@@ -272,8 +303,8 @@
 							</div>
 						</div>
 						<div class="d-flex flex-column justify-content-end">
-							<button class="btn-open-accordion border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-desktop-collapse-1" aria-expanded="false" aria-controls="accordion-desktop-collapse-1">
-								<img class="w-circle-plus-desktop" src="assets/images/circle-plus.svg">
+							<button class="btn-open-accordion border-0 bg-transparent z-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-desktop-collapse-1" aria-expanded="false" aria-controls="accordion-desktop-collapse-1">
+								<img class="w-circle-plus-desktop" src="assets/images/icons/circle-plus.svg">
 							</button>
 						</div>
 					</div>
@@ -289,13 +320,13 @@
 						</ul>
 					</div>
 					<div class="d-flex flex-row justify-content-end">
-						<button class="btn-close-accordion border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-desktop-collapse-1" aria-expanded="false" aria-controls="accordion-desktop-collapse-1">
-							<img class="w-circle-minus-desktop" src="assets/images/circle-minus.svg">
+						<button class="btn-close-accordion border-0 bg-transparent z-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-desktop-collapse-1" aria-expanded="false" aria-controls="accordion-desktop-collapse-1">
+							<img class="w-circle-minus-desktop" src="assets/images/icons/circle-minus.svg">
 						</button>
 					</div>
 				</div>
 			</div>
-			<div class="accordion-item p-4 rounded-5 border border-4 border-nt-4 border-secondary bg-transparent">
+			<div data-aos="fade-up" data-aos-delay="200" class="accordion-item p-4 rounded-5 border border-4 border-nt-4 border-secondary bg-dark">
 				<div class="accordion-header ps-3" id="accordion-desktop-2">
 					<p class="text-light fs-4 fw-medium">Основы устройства, конструкция</p>
 					<div class="d-flex flex-row justify-content-between">
@@ -310,8 +341,8 @@
 							</div>
 						</div>
 						<div class="d-flex flex-column justify-content-end">
-							<button class="btn-open-accordion border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-desktop-collapse-2" aria-expanded="false" aria-controls="accordion-desktop-collapse-2">
-								<img class="w-circle-plus-desktop" src="assets/images/circle-plus.svg">
+							<button class="btn-open-accordion border-0 bg-transparent z-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-desktop-collapse-2" aria-expanded="false" aria-controls="accordion-desktop-collapse-2">
+								<img class="w-circle-plus-desktop" src="assets/images/icons/circle-plus.svg">
 							</button>
 						</div>
 					</div>
@@ -326,8 +357,8 @@
 						</ul>
 					</div>
 					<div class="d-flex flex-row justify-content-end">
-						<button class="btn-close-accordion border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-desktop-collapse-2" aria-expanded="false" aria-controls="accordion-desktop-collapse-2">
-							<img class="w-circle-minus-desktop" src="assets/images/circle-minus.svg">
+						<button class="btn-close-accordion border-0 bg-transparent z-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-desktop-collapse-2" aria-expanded="false" aria-controls="accordion-desktop-collapse-2">
+							<img class="w-circle-minus-desktop" src="assets/images/icons/circle-minus.svg">
 						</button>
 					</div>
 				</div>
@@ -335,12 +366,172 @@
 		</div>
 	</section>
 
-</div>
+	<!-- ** Секция IntroWhiteSection -DESKTOP-  ** -->
+	<section id="section-intro-white-chat-desktop" class="position-relative overflow-hidden rounded-top-5 w-100 bg-dim-light z-0"></section>
 
-<div class="d-block d-sm-none content-mobile">
+	<!-- ** Секция WhiteChatSection -DESKTOP-  ** -->
+	<section class="position-relative overflow-hidden w-100 bg-light border-0 z-2">
+		<div class="w-100 rounded-bottom-5 bg-dim-light">
+			<div data-aos="fade-up" data-aos-delay="200">
+				<div data-aos="fade-left" data-aos-delay="200" class="w-90 mx-auto d-flex flex-row justify-content-start pb-6">
+					<div class="bg-green rounded-5 p-4 mw-60">
+						<span class="fw-normal fs-5 text-dark">
+							Я не представляю как можно получить практику управления дроном?
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div data-aos="fade-up" data-aos-delay="400">
+				<div data-aos="fade-right" data-aos-delay="400" class="w-90 mx-auto d-flex flex-row justify-content-end pb-6">
+					<div class="bg-secondary rounded-5 p-4 mw-60">
+					<span class="fw-normal fs-5 text-light">
+						Мы долго пробовали, экспериментировали и нашли
+						решение в онлайн-сопровождении
+						на практических занятиях
+					</span>
+					</div>
+				</div>
+			</div>
+
+			<div data-aos="fade-up" data-aos-delay="200">
+				<div data-aos="fade-left" data-aos-delay="200" class="w-90 mx-auto d-flex flex-row justify-content-start pb-6">
+					<div class="bg-green rounded-5 p-4 mw-60">
+					<span class="fw-normal fs-5 text-dark">
+						И как это будет?
+					</span>
+					</div>
+				</div>
+			</div>
+
+			<div data-aos="fade-up" data-aos-delay="400">
+				<div data-aos="fade-right" data-aos-delay="400" class="w-90 mx-auto d-flex flex-row justify-content-end pb-6">
+					<div class="bg-secondary rounded-5 p-4 mw-60">
+					<span class="fw-normal fs-5 text-light">
+						После теоретической части мы пойдём на симулятор и там получим базовые
+						необходимые навыки, а уже после будем летать вместе, мы будем следить
+						за этим онлайн
+					</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- ** Секция Teachers -DESKTOP-  ** -->
+	<section id="section-teachers-desktop" class="position-relative overflow-hidden w-100 bg-light pt-5 pb-6 z-2">
+		<div class="w-90 mx-auto swiper swiper-teachers-desktop">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="w-100 mx-auto d-flex flex-row row justify-content-between bg-light">
+						<div class="col-6 ps-0 pe-2 d-flex flex-column justify-content-between">
+							<div class="w-100 px-0 pb-4 d-flex flex-column justify-content-start">
+								<span data-aos="fade-up" data-aos-delay="200" class="fs-1 lh-sm text-dark fw-medium">Иван</span>
+								<span data-aos="fade-up" data-aos-delay="250" class="fs-1 lh-sm text-dark fw-medium">Бояринов</span>
+							</div>
+							<div class="w-100 px-0 pt-3 text-center">
+								<div data-aos="fade-up" data-aos-delay="300" class="w-100 h-teacher-img-block rounded-5 bg-dark-dim-light text-center w-100">
+									<img src="assets/images/teacher-alpha.svg" class="w-100 h-100 px-4 pt-4">
+								</div>
+							</div>
+						</div>
+						<div class="col-6 pe-0 ps-2 d-flex flex-column justify-content-between">
+							<div class="w-100 px-0 pb-4 d-flex flex-column justify-content-end h-25">
+								<div class="d-flex flex-row justify-content-between">
+									<div class="text-start d-flex flex-column justify-content-end">
+										<span data-aos="fade-up" data-aos-delay="300" class="fs-6 lh-sm text-dark fw-light">Модуль</span>
+										<span data-aos="fade-up" data-aos-delay="300" class="fs-5 lh-sm text-dark fw-light">Применение FPV-дронов</span>
+									</div>
+									<div class="text-end d-flex flex-column justify-content-end">
+										<span data-aos="fade-up" data-aos-delay="300" class="fs-5 fw-bold text-purple">9 часов</span>
+									</div>
+								</div>
+							</div>
+							<div class="w-100 px-0 pt-3">
+								<div data-aos="fade-up" data-aos-delay="350" class="w-100 h-teacher-img-block border border-purple border-4 rounded-5 bg-light text-center">
+									<div class="p-4 d-flex flex-column justify-content-between w-100 h-100">
+										<div class="text-start">
+												<span class="text-dark fs-teacher-review fw-light">
+													Готовит команды для конкурсов
+													и соревнований в области беспилотных
+													технологий. Является тестовым
+													пилотом: проводит испытания
+													беспилотников, принимает участие
+													в сборке и настройке предсерийных
+													аппаратов.
+												</span>
+										</div>
+										<div class="d-flex flex-column justify-content-end">
+											<div class="d-flex flex-row justify-content-end">
+												<div class="d-flex flex-row justify-content-center">
+													<img src="assets/images/icons/gradient-circle-arrow-left.svg" class="btn-prev-teacher me-3 w-gradient-circle-arrow-desktop"></img>
+													<img src="assets/images/icons/gradient-circle-arrow-right.svg" class="btn-next-teacher w-gradient-circle-arrow-desktop"></img>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="w-100 mx-auto d-flex flex-row row justify-content-between bg-light">
+						<div class="col-6 ps-0 pe-2 d-flex flex-column justify-content-between">
+							<div class="w-100 px-0 pb-4 d-flex flex-column justify-content-start">
+								<span data-aos="fade-up" data-aos-delay="200" class="fs-1 lh-sm text-dark fw-medium">Николай</span>
+								<span data-aos="fade-up" data-aos-delay="250" class="fs-1 lh-sm text-dark fw-medium">Николаевич</span>
+							</div>
+							<div class="w-100 px-0 pt-3 text-center">
+								<div data-aos="fade-up" data-aos-delay="300" class="w-100 h-teacher-img-block rounded-5 bg-dark-dim-light text-center w-100">
+									<img src="assets/images/teacher-alpha.svg" class="w-100 h-100 px-4 pt-4">
+								</div>
+							</div>
+						</div>
+						<div class="col-6 pe-0 ps-2 d-flex flex-column justify-content-between">
+							<div class="w-100 px-0 pb-4 d-flex flex-column justify-content-end h-25">
+								<div class="d-flex flex-row justify-content-between">
+									<div class="text-start d-flex flex-column justify-content-end">
+										<span data-aos="fade-up" data-aos-delay="300" class="fs-6 lh-sm text-dark fw-light">Модуль</span>
+										<span data-aos="fade-up" data-aos-delay="300" class="fs-5 lh-sm text-dark fw-light">Чтение лекций по философии</span>
+									</div>
+									<div class="text-end d-flex flex-column justify-content-end">
+										<span data-aos="fade-up" data-aos-delay="300" class="fs-5 fw-bold text-purple">10 часов</span>
+									</div>
+								</div>
+							</div>
+							<div class="w-100 px-0 pt-3">
+								<div data-aos="fade-up" data-aos-delay="350" class="w-100 h-teacher-img-block border border-purple border-4 rounded-5 bg-light text-center">
+									<div class="p-4 d-flex flex-column justify-content-between w-100 h-100">
+										<div class="text-start">
+												<span class="text-dark fs-teacher-review fw-light">
+													Пьет чай и рассказывает о личной жизни.
+												</span>
+										</div>
+										<div class="d-flex flex-column justify-content-end">
+											<div class="d-flex flex-row justify-content-end">
+												<div class="d-flex flex-row justify-content-center">
+													<img src="assets/images/icons/gradient-circle-arrow-left.svg" class="btn-prev-teacher me-3 w-gradient-circle-arrow-desktop"></img>
+													<img src="assets/images/icons/gradient-circle-arrow-right.svg" class="btn-next-teacher w-gradient-circle-arrow-desktop"></img>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+<div id="content-mobile" class="d-block d-sm-none">
 
 	<!-- ** Секция TopBar -MOBILE- ** -->
-	<section class="d-flex flex-row justify-content-between section-top-bar-mobile w-90 background-gradient text-center position-relative mx-auto mb-5 mt-4">
+	<section data-aos="zoom-in" data-aos-delay="50" id="section-top-bar-mobile" class="d-flex overflow-hidden flex-row justify-content-between section-top-bar-mobile w-90 background-gradient text-center position-relative mx-auto mb-5 mt-4">
 		<div class="section-top-bar-body-mobile d-flex flex-row justify-content-between w-100">
 			<img class="section-top-bar-img-mobile" src="assets/images/logo-top-bar-layer-1.svg">
 			<div class="d-flex flex-column justify-content-center">
@@ -350,8 +541,8 @@
 	</section>
 
 	<!-- ** Секция Hero -MOBILE- ** -->
-	<section class="section-hero text-center mb-5 mb-sm-6">
-		<img src="assets/images/section-hero/hero-layer-1.svg" class="position-absolute hero-layer-1">
+	<section data-aos="fade-up" data-aos-delay="100" id="section-hero-mobile" class="section-hero overflow-hidden text-center mb-5 mb-sm-6">
+		<img src="assets/images/section-hero/hero-layer-1.png" class="position-absolute hero-layer-1">
 		<img src="assets/images/section-hero/glare-layer-2.svg" class="position-absolute glare-layer-2">
 		<img src="assets/images/section-hero/borders-layer-3.svg" class="position-absolute borders-layer-3">
 		<img src="assets/images/section-hero/outer-pink-layer-3.svg" class="position-absolute outer-pink-layer-3">
@@ -363,15 +554,15 @@
 	</section>
 
 	<!-- ** Секция Title -MOBILE- ** -->
-	<section class="w-90 mx-auto mb-5">
+	<section id="section-title-mobile" class="w-90 overflow-hidden mx-auto mb-5">
 		<div class="d-flex flex-row justify-content-center mb-3">
-			<p class="w-80 fs-6 fw-light text-start">
+			<p data-aos="fade-up" data-aos-delay="200" class="w-80 fs-6 fw-light text-start">
 				Официальный онлайн-курс от Московского
 				авиационного института, утверждённый
 				учёным советом университета.
 			</p>
 		</div>
-		<div class="d-flex flex-column">
+		<div data-aos="fade-up" data-aos-delay="250" class="d-flex flex-column">
 			<div class="col-12 d-flex flex-row">
 				<div class="col-6 d-flex flex-column justify-content-between border border-green border-2 rounded-4 p-3">
 					<span class="fs-7 fw-bold mb-4">ОБРАТНАЯ СВЯЗЬ</span>
@@ -410,33 +601,32 @@
 	</section>
 
 	<!-- ** Секция About -MOBILE- ** -->
-	<section class="w-90 mx-auto position-relative mb-6">
-		<img src="assets/images/logo-mai-layer-1.svg" class="position-relative w-logo-mai-mobile start-0 top-0 z-1">
-		<img src="assets/images/joystick-layer-1.svg" class="position-absolute w-joystick-mobile end-0 bottom-0 z-1">
-		<img src="assets/images/star-layer-1.svg" class="position-absolute w-star-mobile end-star-mobile bottom-star-mobile z-1">
-		<p class="position-relative fw-light fs-6 w-65 lh-sm pt-4 z-2">
+	<section id="section-about-mobile" class="w-90 overflow-hidden mx-auto position-relative mb-6">
+		<img data-aos="zoom-in" data-aos-delay="200" src="assets/images/section-hero/logo-mai-layer-1.svg" class="position-relative w-logo-mai-mobile start-0 top-0 z-1">
+		<img data-aos="zoom-in" data-aos-delay="250" src="assets/images/section-hero/joystick-layer-1.svg" class="position-absolute w-joystick-mobile end-0 bottom-0 z-1">
+		<img data-aos="zoom-in" data-aos-delay="300" src="assets/images/section-hero/star-layer-1.svg" class="position-absolute w-star-mobile end-star-mobile bottom-star-mobile z-1">
+		<p data-aos="fade-right" data-aos-delay="200" class="position-relative fw-light w-80 lh-sm pt-4 z-2">
 			Пройти обучение в комфортном
 			режиме и получить качественные
 			знания и практические навыки
 		</p>
-		<p class="position-relative display-4 lh-sm fw-light my-0 z-2">в самом</p>
-		<p class="position-relative display-4 lh-sm fw-light my-0 ps-4 z-2">отлетевшем</p>
-		<p class="position-relative display-4 lh-sm fw-light my-0 ps-5 z-2">универститете</p>
-		<p class="position-relative display-4 lh-sm fw-light my-0 z-2">России</p>
+		<p data-aos="fade-right" data-aos-delay="200" class="position-relative display-2 lh-sm fw-normal my-0 z-2">в самом</p>
+		<p data-aos="fade-right" data-aos-delay="300" class="position-relative display-2 lh-sm fw-normal my-0 ps-4 z-2">отлетевшем</p>
+		<p data-aos="fade-right" data-aos-delay="400" class="position-relative display-2 lh-sm fw-normal my-0 ps-5 z-2">универститете</p>
+		<p data-aos="fade-right" data-aos-delay="500" class="position-relative display-2 lh-sm fw-normal my-0 z-2">России</p>
 	</section>
 
 	<!-- ** Секция AboutSwiper -MOBILE- ** -->
-	<section class="w-90 mx-auto position-relative mb-6">
+	<section id="section-about-swiper-mobile" class="w-90 overflow-hidden mx-auto position-relative mb-6">
 		<div class="position-relative d-flex flex-row justify-content-start mb-6">
-			<div class="position-relative">
-				<img src="assets/images/section-about-carousel/msg-inner-part.svg" class="position-relative w-inner-msg-block-mobile mb-4">
+			<div data-aos="fade-right" data-aos-delay="250" class="position-relative">
 				<span class="text-green rounded-4 py-4 ps-4 pe-3 bg-light-dark ms-n1">Чё мы там знаем о дронах?
-					<img src="assets/images/section-about-carousel/emodzy-1.svg" class="position-relative w-msg-emodzy-mobile mb-2">
+					<img data-aos="zoom-in" data-aos-delay="150" src="assets/images/section-about-carousel/emodzy-1.svg" class="position-relative w-msg-emodzy-mobile mb-2">
 				</span>
 			</div>
 		</div>
 
-		<div class="swiper swiper-mobile h-swiper-mobile pb-5">
+		<div data-aos="zoom-in" data-aos-delay="250" class="swiper swiper-mobile h-swiper-mobile pb-5">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<div class="col h-100 d-flex flex-column justify-content-between bg-light-dark rounded-4 p-4">
@@ -446,7 +636,7 @@
 							дня — только о дронах...
 						</span>
 						<div class="d-flex flex-row justify-content-end">
-							<img class="w-arrow-long-mobile" src="assets/images/arrow-right-long.svg">
+							<img class="w-arrow-long-mobile" src="assets/images/icons/arrow-right-long.svg">
 						</div>
 					</div>
 				</div>
@@ -459,7 +649,7 @@
 							МАИ
 						</span>
 						<div class="d-flex flex-row justify-content-end">
-							<img class="w-arrow-long-mobile" src="assets/images/arrow-right-long.svg">
+							<img class="w-arrow-long-mobile" src="assets/images/icons/arrow-right-long.svg">
 						</div>
 					</div>
 				</div>
@@ -472,7 +662,7 @@
 							«Архипелаг-2023»
 						</span>
 						<div class="d-flex flex-row justify-content-end">
-							<img class="w-arrow-long-mobile" src="assets/images/arrow-right-long.svg">
+							<img class="w-arrow-long-mobile" src="assets/images/icons/arrow-right-long.svg">
 						</div>
 					</div>
 				</div>
@@ -484,7 +674,7 @@
 							беспилотных авиасистем
 						</span>
 						<div class="d-flex flex-row justify-content-end">
-							<img class="w-arrow-long-mobile" src="assets/images/arrow-right-long.svg">
+							<img class="w-arrow-long-mobile" src="assets/images/icons/arrow-right-long.svg">
 						</div>
 					</div>
 				</div>
@@ -493,20 +683,19 @@
 		</div>
 
 		<div class="position-relative d-flex flex-row justify-content-end mt-5">
-			<div class="position-relative">
+			<div data-aos="fade-left" data-aos-delay="250" class="position-relative">
 				<span class="text-green rounded-4 py-4 ps-4 pe-2 bg-light-dark me-negative-space-sm me-n1">Ну.. как-то так
-					<img src="assets/images/section-about-carousel/emodzy-2.svg" class="position-relative w-msg-emodzy-mobile mb-2">
+					<img data-aos="zoom-in" data-aos-delay="150" src="assets/images/section-about-carousel/emodzy-2.svg" class="position-relative w-msg-emodzy-mobile mb-2">
 				</span>
-				<img src="assets/images/section-about-carousel/msg-inner-part.svg" class="position-relative w-inner-msg-block-mobile mirror mb-4">
 			</div>
 		</div>
 	</section>
 
 	<!-- ** Секция AboutTables -MOBILE- ** -->
-	<section class="w-90 mx-auto mb-5">
-		<h3 class="text-start pb-3">Ближе к делу</h3>
+	<section id="section-about-tables-mobile" class="w-90 overflow-hidden mx-auto mb-5">
+		<h3 data-aos="fade-up" data-aos-delay="200" class="text-start pb-3">Ближе к делу</h3>
 		<div class="d-flex flex-column justify-content-between">
-			<div class="col bg-light-dark rounded-4 mb-4">
+			<div data-aos="fade-up" data-aos-delay="250" class="col bg-light-dark rounded-4 mb-4">
 				<div class="p-3 w-100 h-100 d-flex flex-column justify-content-between">
 					<span class="d-block fw-light pb-4">
 						С 2021 года МАИ входит в первую
@@ -524,7 +713,7 @@
 			</div>
 			<div class="col d-flex flex-column justify-content-between">
 				<div class="d-flex mb-3 justify-content-between">
-					<div class="col me-3 bg-light-dark rounded-4 p-3 d-flex flex-column justify-content-between">
+					<div data-aos="fade-up" data-aos-delay="250" class="col me-3 bg-light-dark rounded-4 p-3 d-flex flex-column justify-content-between">
 						<span class="text-purple display-4 fw-bolder mb-4">
 							1 мес.
 						</span>
@@ -532,7 +721,7 @@
 							длительность<br>программы
 						</span>
 					</div>
-					<div class="col bg-light-dark rounded-4 p-3 d-flex flex-column justify-content-between">
+					<div data-aos="fade-up" data-aos-delay="350" class="col bg-light-dark rounded-4 p-3 d-flex flex-column justify-content-between">
 						<span class="text-purple display-4 fw-bolder mb-4">
 							36
 						</span>
@@ -542,7 +731,7 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-between">
-					<div class="col me-3 bg-light-dark rounded-4 p-3 d-flex flex-column justify-content-between">
+					<div data-aos="fade-up" data-aos-delay="250" class="col me-3 bg-light-dark rounded-4 p-3 d-flex flex-column justify-content-between">
 						<span class="text-purple display-4 fw-bolder mb-4">
 							2500+
 						</span>
@@ -550,7 +739,7 @@
 							обучающихся<br>ежегодно
 						</span>
 					</div>
-					<div class="col bg-light-dark rounded-4 p-3 d-flex flex-column justify-content-between">
+					<div data-aos="fade-up" data-aos-delay="350" class="col bg-light-dark rounded-4 p-3 d-flex flex-column justify-content-between">
 						<span class="text-purple display-4 fw-bolder mb-4">
 							11
 						</span>
@@ -564,10 +753,10 @@
 	</section>
 
 	<!-- ** Секция Program -MOBILE- ** -->
-	<section class="w-100 mx-auto">
-		<h3 class="text-start pb-3 ms-3">Программа курса</h3>
+	<section id="section-program-mobile" class="w-100 overflow-hidden mx-auto">
+		<h3 data-aos="fade-up" data-aos-delay="200" class="text-start pb-3 ms-3">Программа курса</h3>
 		<div class="accordion accordion-flush" id="accordion-mobile">
-			<div class="accordion-item p-3 rounded-5 border border-4 border-secondary bg-transparent">
+			<div data-aos="fade-up" data-aos-delay="200" class="accordion-item p-3 rounded-5 border border-4 border-secondary bg-transparent">
 				<div class="accordion-header" id="accordion-mobile-1">
 					<p class="text-light fs-5 fw-medium">История развития и классификация БЛА</p>
 					<div class="d-flex flex-row justify-content-between">
@@ -580,7 +769,7 @@
 						</div>
 						<div class="d-flex flex-column justify-content-end">
 							<button class="btn-open-accordion border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-mobile-collapse-1" aria-expanded="false" aria-controls="accordion-mobile-collapse-1">
-								<img class="w-circle-plus-mobile" src="assets/images/circle-plus.svg">
+								<img class="w-circle-plus-mobile" src="assets/images/icons/circle-plus.svg">
 							</button>
 						</div>
 					</div>
@@ -597,12 +786,12 @@
 					</div>
 					<div class="d-flex flex-row justify-content-end">
 						<button class="btn-close-accordion border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-mobile-collapse-1" aria-expanded="false" aria-controls="accordion-mobile-collapse-1">
-							<img class="w-circle-minus-mobile" src="assets/images/circle-minus.svg">
+							<img class="w-circle-minus-mobile" src="assets/images/icons/circle-minus.svg">
 						</button>
 					</div>
 				</div>
 			</div>
-			<div class="accordion-item p-3 rounded-5 border border-4 border-nt-4 border-secondary bg-transparent">
+			<div data-aos="fade-up" data-aos-delay="200" class="accordion-item p-3 rounded-5 border border-4 border-nt-4 border-secondary bg-transparent">
 				<div class="accordion-header" id="accordion-mobile-2">
 					<p class="text-light fs-5 fw-medium">Основы устройства, конструкция</p>
 					<div class="d-flex flex-row justify-content-between">
@@ -618,7 +807,7 @@
 						</div>
 						<div class="d-flex flex-column justify-content-end">
 							<button class="btn-open-accordion border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-mobile-collapse-2" aria-expanded="false" aria-controls="accordion-mobile-collapse-2">
-								<img class="w-circle-plus-mobile" src="assets/images/circle-plus.svg">
+								<img class="w-circle-plus-mobile" src="assets/images/icons/circle-plus.svg">
 							</button>
 						</div>
 					</div>
@@ -635,9 +824,63 @@
 					</div>
 					<div class="d-flex flex-row justify-content-end">
 						<button class="btn-close-accordion border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-mobile-collapse-2" aria-expanded="false" aria-controls="accordion-mobile-collapse-2">
-							<img class="w-circle-minus-mobile" src="assets/images/circle-minus.svg">
+							<img class="w-circle-minus-mobile" src="assets/images/icons/circle-minus.svg">
 						</button>
 					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ** Секция IntroWhiteSection -MOBILE-  ** -->
+	<section id="section-intro-white-chat-mobile" class="d-grid place-items-center position-relative overflow-hidden w-100 h-intro-white-section-mobile mx-auto bg-dim-light rounded-top-5">
+		<img data-aos="zoom-out" data-aos-delay="100" src="assets/images/RING-original.svg" class="position-absolute transform-origin-center z-1 w-140 transform-translateY-up">
+		<img data-aos="zoom-out" data-aos-delay="200" src="assets/images/RING-original.svg" class=" position-absolute transform-origin-center z-1 w-90 transform-translateY-up">
+		<img data-aos="zoom-out" data-aos-delay="300" src="assets/images/RING-original.svg" class=" position-absolute transform-origin-center z-1 w-60 transform-translateY-up">
+		<img data-aos="zoom-out" data-aos-delay="400" src="assets/images/RING-original.svg" class=" position-absolute transform-origin-center z-1 w-40 transform-translateY-up">
+		<img data-aos="zoom-out" data-aos-delay="500" src="assets/images/RING-original.svg" class=" position-absolute transform-origin-center z-1 w-25 transform-translateY-up">
+		<div data-aos="zoom-out" data-aos-delay="600" class="position-relative d-flex flex-row justify-content-center z-2 transform-translateY-up">
+			<span class="text-dark display-1 fw-bold text-center ">Мы знаем как передать</span>
+		</div>
+	</section>
+
+	<!-- ** Секция WhiteChatSection -MOBILE-  ** -->
+	<section class="position-relative w-100 mx-auto overflow-hidden">
+		<div class="bg-dim-light pt-6">
+			<div data-aos="fade-right" data-aos-delay="200"  class="d-flex flex-row justify-content-start pb-5">
+				<div class="bg-green rounded-5 py-3 px-4 mw-90">
+					<span class="fw-normal text-dark">
+						Я не представляю как можно получить практику управления дроном?
+					</span>
+				</div>
+			</div>
+
+			<div data-aos="fade-left" data-aos-delay="200" class="d-flex flex-row justify-content-end pb-5">
+				<div class="bg-secondary rounded-5 py-3 px-4 mw-90">
+					<span class="fw-normal text-light">
+						Мы долго пробовали, экспериментировали и нашли
+						решение в онлайн-сопровождении
+						на практических занятиях
+					</span>
+				</div>
+			</div>
+
+			<div data-aos="fade-right" data-aos-delay="200" class="d-flex flex-row justify-content-start pb-5">
+				<div class="bg-green rounded-5 py-3 px-4 mw-90">
+					<span class="fw-normal text-dark">
+						И как это будет?
+					</span>
+				</div>
+			</div>
+
+			<div data-aos="fade-left" data-aos-delay="200" class="d-flex flex-row justify-content-end pb-5">
+				<div class="bg-secondary rounded-5 py-3 px-4 mw-90">
+					<span class="fw-normal text-light">
+						После теоретической части мы пойдём на симулятор
+						и там получим базовые необходимые навыки, а уже
+						после будем летать вместе, мы будем следить за
+						этим онлайн
+					</span>
 				</div>
 			</div>
 		</div>
@@ -646,6 +889,18 @@
 </div>
 
 <script src="dist/bundle.js"></script>
+<script>
+	AOS.init();
+</script>
+<!-- ** DESKTOP Scripts  ** -->
+<script src="assets/js/desktop/constants.js"></script>
+<script src="assets/js/desktop/utils.js"></script>
+<script src="assets/js/desktop/main.js"></script>
+
+<!-- ** MOBILE Scripts  ** -->
+<script src="assets/js/mobile/constants.js"></script>
+<script src="assets/js/mobile/utils.js"></script>
+<script src="assets/js/mobile/main.js"></script>
 </body>
 
 </html>

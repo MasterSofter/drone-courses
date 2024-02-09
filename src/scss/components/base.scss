@@ -11,8 +11,108 @@
 
 body{
   font-family: als-sirius;
-  background-color: $body-bg-dark;
   color: $light;
+}
+
+.mix-blend{
+  mix-blend-mode: multiply;
+}
+
+.transition-smooth{
+  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.transform-origin-center{
+  transform-origin: 50% 50% 0;
+}
+
+.perspective{
+  perspective: 6rem;
+  perspective-origin: center;
+
+  @include media-breakpoint-down(xl){
+    perspective: 3rem !important;
+  }
+}
+
+.transform-translateY-up{
+  transform: translateY(-4rem) !important;
+}
+
+.ring-start-position-0{
+  transform: translateZ(1vw * 15);
+}
+
+.ring-start-position-1{
+  transform: translateZ(1vw * 30);
+}
+
+.ring-start-position-2{
+  transform: translateZ(1vw * 35);
+}
+
+.ring-start-position-3{
+  transform: translateZ(1vw * 40);
+}
+
+.ring-start-position-4{
+  transform: translateZ(1vw * 45);
+}
+
+.ring-start-position-5{
+  transform: translateZ(1vw * 50);
+}
+
+.ring-start-position-6{
+  transform: translateZ(1vw * 55);
+}
+
+.ring-start-position-7{
+  transform: translateZ(1vw * 60);
+}
+
+.ring-start-position-8{
+  transform: translateZ(1vw * 65);
+}
+
+.ring-start-position-9{
+  transform: translateZ(1vw * 70);
+}
+
+.ring-start-position-10{
+  transform: translateZ(1vw * 75);
+}
+
+.ring-start-position-11{
+  transform: translateZ(1vw * 80);
+}
+
+.ring-start-position-12{
+  transform: translateZ(1vw * 85);
+}
+
+.ring-start-position-13{
+  transform: translateZ(1vw * 90);
+}
+
+.ring-start-position-14{
+  transform: translateZ(1vw * 95);
+}
+
+.ring-start-position-15{
+  transform: translateZ(1vw * 100);
+}
+
+
+
+
+
+.will-change{
+  will-change: transform;
+}
+
+.place-items-center{
+  place-items: center;
 }
 
 .background-gradient {
@@ -34,6 +134,12 @@ body{
 .fs-2 {
   @include media-breakpoint-up(sm){
     font-size: 2rem !important;
+  }
+}
+
+.display-3{
+  @include media-breakpoint-up(sm){
+    font-size: 3.8rem !important;
   }
 }
 
@@ -107,7 +213,7 @@ ul{
   padding-left: 3rem;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
-  background-image: url("assets/images/arrow-right-long.svg");
+  background-image: url("assets/images/icons/arrow-right-long.svg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 1.5rem;
@@ -118,7 +224,7 @@ ul{
   padding-left: 1.5rem;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
-  background-image: url("assets/images/arrow-right-long.svg");
+  background-image: url("assets/images/icons/arrow-right-long.svg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 1rem;
