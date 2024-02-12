@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 html {
   font-size: 1.8vw;
 }
@@ -7,10 +6,6 @@ html {
   html {
     font-size: 4vw;
   }
-}
-
-::-webkit-scrollbar {
-  width: 0;
 }
 
 /*!
@@ -9102,6 +9097,30 @@ textarea.form-control-lg {
   font-size: 1.1rem !important;
 }
 
+.fs-mobile-xs {
+  font-size: 0.8rem !important;
+}
+
+.fs-mobile-sm {
+  font-size: 0.9rem !important;
+}
+
+.fs-mobile-md {
+  font-size: 1.025rem !important;
+}
+
+.fs-mobile-lg {
+  font-size: 1.25rem !important;
+}
+
+.fs-mobile-xl {
+  font-size: calc(1.375rem + 1.5vw) !important;
+}
+
+.fs-mobile-xxl {
+  font-size: calc(1.525rem + 3.3vw) !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -13708,6 +13727,12 @@ textarea.form-control-lg {
   .fs-4 {
     font-size: 1.5rem !important;
   }
+  .fs-mobile-xl {
+    font-size: 2.5rem !important;
+  }
+  .fs-mobile-xxl {
+    font-size: 4rem !important;
+  }
 }
 @media print {
   .d-print-inline {
@@ -14324,8 +14349,36 @@ textarea.form-control-lg {
   width: 90% !important;
 }
 
+.w-95 {
+  width: 95% !important;
+}
+
 .w-140 {
   width: 140% !important;
+}
+
+.w-top-bar-mai-logo-desktop {
+  width: 1.8rem !important;
+}
+
+.w-top-bar-sprint-university-logo-desktop {
+  width: 4.8rem !important;
+}
+
+.w-top-bar-x-desktop {
+  width: 0.4rem !important;
+}
+
+.w-top-bar-mai-logo-mobile {
+  width: 1.8rem !important;
+}
+
+.w-top-bar-sprint-university-logo-mobile {
+  width: 5rem !important;
+}
+
+.w-top-bar-x-mobile {
+  width: 0.5rem !important;
 }
 
 .w-logo-mai-desktop {
@@ -14341,7 +14394,7 @@ textarea.form-control-lg {
 }
 
 .w-logo-mai-mobile {
-  width: 3rem !important;
+  width: 4rem !important;
 }
 
 .w-joystick-mobile {
@@ -14390,6 +14443,10 @@ textarea.form-control-lg {
 
 .w-circle-minus-mobile {
   width: 2.8rem !important;
+}
+
+.w-circle-arrow-desktop {
+  width: 3.5rem !important;
 }
 
 .w-gradient-circle-arrow-desktop {
@@ -15374,6 +15431,30 @@ textarea.form-control-lg {
   font-size: 1.1rem !important;
 }
 
+.fs-mobile-xs {
+  font-size: 0.8rem !important;
+}
+
+.fs-mobile-sm {
+  font-size: 0.9rem !important;
+}
+
+.fs-mobile-md {
+  font-size: 1.025rem !important;
+}
+
+.fs-mobile-lg {
+  font-size: 1.25rem !important;
+}
+
+.fs-mobile-xl {
+  font-size: calc(1.375rem + 1.5vw) !important;
+}
+
+.fs-mobile-xxl {
+  font-size: calc(1.525rem + 3.3vw) !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -19980,6 +20061,12 @@ textarea.form-control-lg {
   .fs-4 {
     font-size: 1.5rem !important;
   }
+  .fs-mobile-xl {
+    font-size: 2.5rem !important;
+  }
+  .fs-mobile-xxl {
+    font-size: 4rem !important;
+  }
 }
 @media print {
   .d-print-inline {
@@ -20244,6 +20331,10 @@ ul {
   background-size: 1rem;
 }
 
+.btn-hover-animation:hover {
+  opacity: 0.8;
+}
+
 .section-top-bar {
   border-color: transparent;
   border-radius: 1.4vw;
@@ -20405,6 +20496,14 @@ ul {
 
 .bottom-star-mobile {
   bottom: 10rem;
+}
+
+.end-btns-teachers-swiper-desktop {
+  right: 1.2rem;
+}
+
+.bottom-btns-teachers-swiper-desktop {
+  bottom: 1.2rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -176,47 +176,9 @@ function InitSwiperTeachersDesktop(){
     },
   });
 }
-function InitProgramDesktop(){
-  let btnsOpen = document.getElementsByClassName('btn-open-accordion');
-  let btnsClose = document.getElementsByClassName('btn-close-accordion');
-
-  for(let i = 0; i < btnsOpen.length; i++){
-    btnsOpen[i].onclick = OpenEventHandler;
-  }
-
-  for(let i = 0; i < btnsClose.length; i++){
-    btnsClose[i].onclick = CloseEventHandler;
-  }
-}
-function OpenEventHandler(event){
-  let btns = document.getElementsByClassName("btn-open-accordion");
-
-  for(let i = 0; i< btns.length; i++){
-    if(btns[i] !== event.currentTarget){
-      btns[i].classList.remove("invisible");
-      btns[i].parentElement.parentElement.parentElement.parentElement.classList.add("bg-dark");
-      btns[i].parentElement.parentElement.parentElement.parentElement.classList.remove("bg-dim-light-dark");
-    }
-  }
-  event.currentTarget.classList.add("invisible");
-
-  event.currentTarget.parentElement.parentElement.parentElement.parentElement.classList.remove("bg-transparent");
-  event.currentTarget.parentElement.parentElement.parentElement.parentElement.classList.add("bg-dim-light-dark");
-}
-function CloseEventHandler(event){
-  let btns = document.getElementsByClassName("btn-open-accordion");
-
-  for(let i = 0; i< btns.length; i++){
-    btns[i].classList.remove("invisible");
-  }
-
-  event.currentTarget.parentElement.parentElement.parentElement.classList.add("bg-dark");
-  event.currentTarget.parentElement.parentElement.parentElement.classList.remove("bg-dim-light-dark");
-}
 
 function Init(){
   InitSwiperDesktop();
-  InitProgramDesktop();
   InitSwiperTeachersDesktop();
 
   InitSectionIntroWhiteChat();
